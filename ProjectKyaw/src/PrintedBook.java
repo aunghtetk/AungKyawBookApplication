@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
-public class PrintedBook extends Book {
-    private int pages;
+public class PrintedBook extends Book { //inheritance
+    private int pages; //encapsulation
 
     public PrintedBook(String title, String author, String genre, int pages) {
         super(title, author, genre, "PrintedBook");
