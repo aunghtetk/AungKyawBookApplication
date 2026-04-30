@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
-public class AudioBook extends Book {
-    private int durationMinutes;
+public class AudioBook extends Book { //inheritance
+    private int durationMinutes; //encapsulation
 
     public AudioBook(String title, String author, String genre, int durationMinutes) {
         super(title, author, genre, "AudioBook");
