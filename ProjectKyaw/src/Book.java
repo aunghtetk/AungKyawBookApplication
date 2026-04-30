@@ -2,11 +2,11 @@ import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Map;
 
-public abstract class Book implements BookInterface {
-    private String title;
-    private String author;
-    private String genre;
-    private String bookType;
+public abstract class Book implements BookInterface { //abstraction
+    private String title; //encapsulation
+    private String author; //encapsulation
+    private String genre;//encapsulation
+    private String bookType; //encapsulation
 
     public Book(String title, String author, String genre, String bookType) {
         this.title = title;
@@ -47,8 +47,8 @@ public abstract class Book implements BookInterface {
     }
 
     @Override
-    public Map<String, Integer> numberBooksPerGenre(ArrayList<Book> books) {
-        Map<String, Integer> genreCount = new HashMap<>();
+    public Map<String, Integer> numberBooksPerGenre(ArrayList<Book> books) { //polymophism
+        Map<String, Integer> genreCount = new HashMap<>(); //polymophism
 
         for (Book book : books) {
             String genre = book.getGenre();
