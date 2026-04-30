@@ -2,8 +2,8 @@ import java.util.*;
 import java.io.*;
 
 public class BookApplication {
-    private static ArrayList<Book> books = new ArrayList<>();
-    private static Scanner scnr = new Scanner(System.in);
+    private static ArrayList<Book> books = new ArrayList<>();//polymophism and encapsulation
+    private static Scanner scnr = new Scanner(System.in);//encapsulation
 
     public static void main(String[] args) {
         int choice = 0;
@@ -62,7 +62,7 @@ public class BookApplication {
 
         } while (choice != 9);
     }
-    private static void addBooks() {
+    private static void addBooks()  { //encapsulation
         System.out.println("Which type of books do you want to add? Type A/a for audio book and P/p for printed books");
         System.out.print("Enter your choice : ");
         String input = scnr.nextLine();
@@ -106,7 +106,7 @@ public class BookApplication {
         }
     }
 
-    private static void displayAllBooks() {
+    private static void displayAllBooks() { //encapsulation
         if (books.isEmpty()) {
             System.out.println("No books available.");
             return;
@@ -118,7 +118,7 @@ public class BookApplication {
         }
     }
 
-    private static void searchBooks() {
+    private static void searchBooks() { //encapsulation
         System.out.println("Search by:");
         System.out.println("1. Title");
         System.out.println("2. Author");
@@ -159,12 +159,12 @@ public class BookApplication {
         }
     }
 
-    private static void sortBooks() {
+    private static void sortBooks() { //encapsulation
         books.sort(Comparator.comparing(Book::getTitle));
         System.out.println("Books sorted by title.");
     }
 
-    private static void displayStatistics() {
+    private static void displayStatistics() { //encapsulation
         double totalCost = 0;
 
         for (Book book : books) {
@@ -188,7 +188,7 @@ public class BookApplication {
         }
     }
 
-    private static void displayLastBooks() {
+    private static void displayLastBooks() { //encapsulation
         System.out.println("\nLast 6 Overall Books:");
         displayLastOverall(6);
 
@@ -199,7 +199,7 @@ public class BookApplication {
         displayLastByType("AudioBook", 3);
     }
 
-    private static void displayLastOverall(int n) {
+    private static void displayLastOverall(int n) { //encapsulation
         int start = Math.max(0, books.size() - n);
 
         for (int i = start; i < books.size(); i++) {
@@ -208,7 +208,7 @@ public class BookApplication {
         }
     }
 
-    private static void displayLastByType(String type, int n) {
+    private static void displayLastByType(String type, int n) { //encapsulation
         int count = 0;
 
         for (int i = books.size() - 1; i >= 0 && count < n; i--) {
@@ -224,7 +224,7 @@ public class BookApplication {
         }
     }
 
-    private static void saveToFile() {
+    private static void saveToFile() { //encapsulation
         try {
             PrintWriter writer = new PrintWriter(new FileWriter("books.txt"));
 
@@ -240,7 +240,7 @@ public class BookApplication {
         }
     }
 
-    private static void loadFromFile() {
+    private static void loadFromFile() {  //encapsulation
         books.clear();
 
         try {
