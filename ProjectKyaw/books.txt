@@ -1,0 +1,6 @@
+PrintedBook,Clean Code,Robert Martin,Programming,116.0,232
+PrintedBook,The Pragmatic Programmer,Andrew Hunt,Programming,88.0,176
+AudioBook,Atomic Habits,James Clear,Self-Help,80.0,320
+PrintedBook,Deep Learning,Ian Goodfellow,AI,387.5,775
+AudioBook,Project Hail Mary,Andy Weir,Sci-Fi,240.0,960
+PrintedBook,Thinking in Java,Bruce Eckel,Programming,575.0,1150
